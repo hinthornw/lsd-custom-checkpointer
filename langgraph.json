@@ -1,0 +1,11 @@
+{
+  "$schema": "https://langgra.ph/schema.json",
+  "dependencies": ["."],
+  "graphs": {
+    "agent": "agent.graph:graph"
+  },
+  "checkpointer": {
+    "path": "agent.checkpointer:generate_checkpointer"
+  },
+  "image_distro": "wolfi"
+}

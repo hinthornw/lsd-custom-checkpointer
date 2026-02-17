@@ -10,6 +10,7 @@ license = { text = "MIT" }
 requires-python = ">=3.10"
 dependencies = [
     "langgraph>=1.0.0",
+    "langgraph-checkpoint-mongodb>=0.3.1",
     "langgraph-checkpoint-redis>=0.3.5",
     "python-dotenv>=1.0.1",
 ]

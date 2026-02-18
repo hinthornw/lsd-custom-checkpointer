@@ -7,5 +7,6 @@
   "checkpointer": {
     "path": "./src/agent/checkpointer.py:generate_checkpointer"
   },
+  "env": ".env",
   "image_distro": "wolfi"
 }

@@ -8,7 +8,6 @@ import os
 
 mongo_connection_string = os.environ["MONGODB_URI"]
 
-
 if TYPE_CHECKING:
     from collections.abc import AsyncIterator
 
@@ -23,5 +22,5 @@ _TYPED_MARKER = "__serde_typed__"
 
 @asynccontextmanager
 async def generate_checkpointer() -> AsyncIterator[BaseCheckpointSaver]:
-    async with MongoDBSaver.from_conn_string(mongo_connection_string) as checkpointer:
+    with MongoDBSaver.from_conn_string(mongo_connection_string) as checkpointer:
         yield checkpointer

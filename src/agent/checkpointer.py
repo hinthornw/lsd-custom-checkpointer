@@ -5,6 +5,7 @@ from typing import TYPE_CHECKING
 
 from langgraph.checkpoint.mongodb import MongoDBSaver
 import os
+print(os.environ)
 
 mongo_connection_string = os.environ["MONGODB_URI"]
 
